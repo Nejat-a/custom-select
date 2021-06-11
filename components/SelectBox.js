@@ -20,13 +20,15 @@ export const SelectBox = () => {
   return (
     <div className={styles.selectContainer}>
       <p className={styles.selectTitle}>Task status</p>
-      <div className={styles.selectedOption} onClick={handleClick} tabIndex="1">
-        <p>
+
+      <button className={styles.btn} onClick={handleClick}>
+        <span>
           <FaCircle className={styles.circle} style={{ color: `${color}` }} />{" "}
           {optionValue}
-        </p>
+        </span>
         {click ? <FaAngleUp /> : <FaAngleDown />}
-      </div>
+      </button>
+
       {click ? (
         <ul className={styles.selectUl}>
           <li
