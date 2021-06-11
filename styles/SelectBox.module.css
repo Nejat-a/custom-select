@@ -1,0 +1,53 @@
+/* :root {
+    --green: #aee28a;
+    --blue: #4e92df;
+    --orange: #f3a536;
+    --red: #fd7173;
+    --gray: #707a83;
+  } */
+
+.selectContainer {
+  width: 200px;
+}
+
+.selectTitle {
+  margin-bottom: 7px;
+}
+
+.selectedOption {
+  cursor: pointer;
+  display: block;
+  color: #707a83;
+  border: 1px solid #707a83;
+  border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.selectedOption:focus-within {
+  border: 1px solid #4e92df;
+}
+
+.selectUl {
+  list-style-type: none;
+  color: #707a83;
+
+  border: 1px solid #707a83;
+  border-radius: 5px;
+}
+
+.circle {
+  margin-right: 5px;
+}
+
+.selectUl li {
+  cursor: pointer;
+  padding: 7px;
+}
+
+.selectUl li:hover {
+  background-color: #eeeeee;
+}
